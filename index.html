@@ -1024,20 +1024,26 @@
   /* customize formbutton below*/     
   formbutton("create", {
     action: "https://formspree.io/f/myyrznok",
-    title: "How can we help?",
+    title: "Get in touch",
     fields: [
       { 
-        type: "email", 
+        type: "text", 
         label: "Email:", 
-        name: "email",
+        name: "Email",
         required: true,
-        placeholder: "your@email.com"
+        placeholder: "Email Address"
+      },
+      {
+        type: "text",
+        label: "Subject:",
+        name: "Subject",
+        placeholder: "Subject",
       },
       {
         type: "textarea",
         label: "Message:",
-        name: "message",
-        placeholder: "What's on your mind?",
+        name: "Message",
+        placeholder: "Enter message here..",
       },
       { type: "submit" }      
     ],
